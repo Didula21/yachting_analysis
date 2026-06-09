@@ -13,7 +13,7 @@ app = Flask(__name__)
 # CORS INITIALIZATION (Cross-Origin Resource Sharing)
 # ============================================
 # Connects frontend to backend securely across decoupled dev server ports
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # ============================================
 # FOLDERS
